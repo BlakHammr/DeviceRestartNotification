@@ -11,7 +11,7 @@ SET WORKINGDIR=%~dp0
 @ECHO WORKINGDIR=%WORKINGDIR%
 
 
-robocopy "%WORKINGDIR%Hy-Vee" "%Windir%\SystemReboot
+robocopy "%WORKINGDIR%Script" "%Windir%\SystemReboot
 
 cmd /c schtasks.exe /Create /XML "%WORKINGDIR%Script\System_Reboot.xml" /tn System_Reboot
 
